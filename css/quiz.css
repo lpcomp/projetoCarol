@@ -1,0 +1,209 @@
+#quizScreen{
+    display: flex;
+    flex-direction: row;
+}
+
+#quizLeft{
+    flex: 1.5;
+    position: relative;
+}
+#quizLeft video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.boxTextLeft{
+    position: absolute;
+    z-index: 10;    
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.boxTextLeft span{
+    font-family: 'Roboto Slab', serif;
+    font-size: 6vmin;
+    font-weight: 700;
+    color: #fff;
+}
+.boxEffectImgQuiz{
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(45 45 45 / 75%);
+}
+.imgQuiz{
+    width: 100%;
+    height: 100%;    
+    background: url(../assets/images/quiz/quiz_0.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+#quizRight{
+    flex: 2;
+    background-color: #814a99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.boxPoints{
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    pointer-events: none;
+    justify-content: center;
+    background-color: #814a99;
+    z-index: 5;
+
+    transition: 0.2s;
+    opacity: 0;
+}
+#explosionAni {
+    margin: 0 auto;
+}
+.textPoints{
+    font-family: 'Roboto Slab', serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    z-index: 7;
+}
+
+.boxQuestions{
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.numberQuestion{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 3%;
+}
+.titleQuestion{
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5%;
+}
+.boxOptionsQuestion{
+    width: 100%;
+}
+.option{
+    width: 100%;
+    background-color: #9f61bb;
+    border-radius: 5px;
+    padding: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.option:hover{
+    /* box-shadow: 0px 10px 20px -10px #3c2347; */
+    box-shadow: 0px 0px 20px 0px #3c2347;
+}
+.textOption{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.btQuestion{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+    background-color: #3a3a3a;
+    padding: 3%;
+    border-radius: 5px;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0.3;
+    transition: opacity, background-color 0.3s;
+}
+.btQuestion:hover {
+    background-color: #212121;
+}
+.boxCloseModal {
+    background-color: #814a99;
+    color: #ececec;
+    padding: 5px 10px;
+    font-size: 2.8vmin;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    border-radius: 0 0 0 6px;
+    font-family: 'Roboto Slab', serif;
+    transition: background-color 0.2s;
+}
+.boxCloseModal:hover {
+    background-color: #28162f;
+}
+
+.boxFinalAnswer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    pointer-events: none;
+    justify-content: center;
+    background-color: #814a99;
+    z-index: 7;
+    transition: opacity 0.2s;
+    opacity: 0;
+}
+.boxFinalAnswer span {
+    color: #ececec;
+    font-size: 3vmin;
+    margin-bottom: 6%;
+    font-weight: 600;
+}
+.boxFinalAnswer input {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ececec;
+    color: #ececec;
+    padding: 0.5vmin;
+    font-size: 2.8vmin;
+    width: 97%;
+}
+.boxFinalAnswer input::placeholder {
+    color: #ececec;
+    opacity: 1; /* Firefox */
+}
+.boxFinalAnswer div {
+
+}
+
+@media only screen and (orientation: portrait) {
+    #quizScreen{
+        flex-direction: column;
+    }
+    #quizLeft{
+        flex: 0.8;
+    }
+    #quizRight{
+        flex: 2;
+    }
+    .boxPoints{
+        width: 100%;
+    }
+}

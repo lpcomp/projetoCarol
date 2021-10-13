@@ -1,0 +1,168 @@
+
+.largeBox{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #401b50;
+  }
+  .topLargeBox{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-bottom: 4%;
+  }
+  .bgTopLargeBox{
+    height: 23vh;
+  }
+  .titleTopLargeBox{
+    position: absolute;
+    bottom: 5vh;
+    height: 7vh;
+  }
+  
+  .btClose{
+    position: absolute;
+    right: -5%;
+    top: -3%;
+    height: 7vh;
+    cursor: pointer;
+  }
+  
+  /*********************** Alert screen ********************/
+  #alertScreen{
+    z-index: 500;
+    display: none;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+ 
+  #alertScreen .largeBox, #rotateAlert .largeBox{
+    height: 100%;
+    width: 100%;
+    padding: 4%;
+    margin-top: 0;
+  }
+
+  #alertScreen .largeBox {
+    margin-top: 120%;
+    transition: margin-top 0.6s;
+    transition-timing-function: cubic-bezier(0.85, -0.3, 0.13, 1.29);
+  }
+
+  #alertScreen .topLargeBox span, #rotateAlert .topLargeBox span{
+    color: #ececec;
+    letter-spacing: 0.1vh;
+    font-size: 6vh;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  #alertScreen .btClose{
+    right: -3%;
+    top: -5%;
+  }
+  
+  #contentAlert, #contentRotateAlert{    
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #contentAlert span, #contentRotateAlert span{
+    font-size: 3vh;
+    color: #cecece;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .showAlert {
+    opacity: 1!important;
+  }
+  .showAlert .largeBox {
+    margin-top: 0!important;
+  }
+  /*********************** Rotate Alert screen ********************/
+  
+  #rotateAlert {
+    background-color: rgb(0, 179, 231);
+    z-index: 1000;
+    
+    display: none;
+  }
+  
+  /*********************** loading extras ********************/
+  #loadingScreen {  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* display: none; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 2500;
+    background-color: rgba(0,0,0,.8);
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+  
+    display: none;
+  }
+  #contentLoading{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #contentLoading img{
+    height: 28vh;
+    margin-bottom: 2vh;
+  }
+  #contentLoading span{
+    font-family: 'Changa One',sans-serif;
+    font-size: 3.0vh;
+    color: #fff;
+    letter-spacing: 0.5vh;
+  }
+  

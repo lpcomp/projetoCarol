@@ -1,0 +1,66 @@
+body,
+html {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;  
+}
+
+button{
+  cursor: pointer;
+}
+
+img {
+  -webkit-touch-callout: none;
+  -khtml-touch-callout: none;
+  -moz-touch-callout: none;
+  -o-touch-callout: none;
+  touch-callout: none;
+
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+main {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.screen {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.delimitador {
+  height: auto;
+  width: 100%;
+  max-width: 780px;
+}
+
+.popUp{
+  background-color: rgb(16 16 16 / 93%);
+}
+
+.columnCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

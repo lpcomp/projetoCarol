@@ -1,0 +1,75 @@
+[
+    {
+        "stages":[    
+            {
+                "stage": 0,
+                "title": "Swab de cão com piodermite",
+                "options": [
+                    {
+                        "title": "Exame direto: Coloração de Gram",
+                        "nextStage": 0,
+                        "feedback": "Poucos CGP"
+                    },
+                    {
+                        "title": "Semear em meio de cultura",
+                        "nextStage": 1,
+                        "feedback": ""
+                    }
+                ]
+            },
+            {
+                "stage": 1,
+                "title": "Swab de cão com piodermite",
+                "options": [
+                    {
+                        "title": "Ágar MacConkey",
+                        "nextStage": 1,
+                        "feedback": "Negativo"
+                    },
+                    {
+                        "title": "Manitol Salgado (Chapman)",
+                        "nextStage": 2,
+                        "feedback": "Colônias amarelo pálidas, circulares. Fermentação de Manitol(+)"
+                    },
+                    {
+                        "title": "ATS",
+                        "nextStage": 2,
+                        "feedback": "Colônias amarelo pálidas, circulares"
+                    },
+                    {
+                        "title": "Ágar Sangue",
+                        "nextStage": 2,
+                        "feedback": "Colônias amarelo pálidas, circulares. Ocorrência de Beta-hemólise"
+                    },
+                    {
+                        "title": "Ágar EMB (Teague)",
+                        "nextStage": 1,
+                        "feedback": "Negativo"
+                    }
+                ]
+            },
+            {
+                "stage": 2,
+                "title": "Swab de cão com piodermite",
+                "options": [
+                    {
+                        "title": "Gram",
+                        "nextStage": 2,
+                        "feedback": "CGP"
+                    },
+                    {
+                        "title": "Catalase",
+                        "nextStage": 2,
+                        "feedback": "Positivo"
+                    },
+                    {
+                        "title": "Coagulase",
+                        "nextStage": 2,
+                        "feedback": "Positivo"
+                    }
+                ]
+            }
+        ],
+        "conclusion": "Staphylococcus pseudintermedius"
+    }
+]
